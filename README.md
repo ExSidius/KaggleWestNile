@@ -6,15 +6,15 @@ Let's start out with a timeline.
 
 ### Data Wrangling
 
-Brice and Ram will have this completed by Thursday.
+**_Brice_ and _Ram_ will have this completed by _Thursday_.**
 
 ### EDA
 
-Everybody will work on this until Saturday.
+**_Everybody_ will work on this until _Saturday_.**
 
 ### Model Building
 
-Everyone will work on this until Tuesday.
+**_Everyone_ will work on this until _Tuesday_.**
 
 Some of the different models we will consider are listed below.
 
