@@ -1,5 +1,33 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Kaggle Competition - Starter
 
+## Dataset
+
+### Kaggle file descriptions
+
+__train.csv, test.csv__ - the training and test set of the main dataset. The training set consists of data from 2007, 2009, 2011, and 2013, while in the test set you are requested to predict the test results for 2008, 2010, 2012, and 2014.
+ - Id: the id of the record
+ - Date: date that the WNV test is performed
+ - Address: approximate address of the location of trap. This is used to send to the GeoCoder. 
+ - Species: the species of mosquitos
+ - Block: block number of address
+ - Street: street name
+ - Trap: Id of the trap
+ - AddressNumberAndStreet: approximate address returned from GeoCoder
+ - Latitude, Longitude: Latitude and Longitude returned from GeoCoder
+ - AddressAccuracy: accuracy returned from GeoCoder
+ - NumMosquitos: number of mosquitoes caught in this trap
+ - WnvPresent: whether West Nile Virus was present in these mosquitos. 1 means WNV is present, and 0 means not present. 
+
+__spray.csv__ - GIS data of spraying efforts in 2011 and 2013
+ - Date, Time: the date and time of the spray
+ - Latitude, Longitude: the Latitude and Longitude of the spray
+
+__weather.csv__ - weather data from 2007 to 2014. . 
+ - sampleSubmission.csv - a sample submission file in the correct format
+ - Column descriptions in __noaa_weather_qclcd_documentation.pdf__
+
+~~The dataset, along with description, can be found here: [https://www.kaggle.com/c/predict-west-nile-virus/](https://www.kaggle.com/c/predict-west-nile-virus/).
+=======
 ## Introduction
 
 Welcome to your first week of work at the Center for Disease Control. Time to get to work!
@@ -13,6 +41,7 @@ Once again, welcome to the CDC. We have high expectations for you!
 ## Dataset
 
 The dataset, along with description, can be found here: [https://www.kaggle.com/c/predict-west-nile-virus/](https://www.kaggle.com/c/predict-west-nile-virus/).
+>>>>>>> 3be2457d8696e0110f0015ca150a057523c24112
 
 **This is also where you will be submitting your code for evaluation**. We will be using the Kaggle Leaderboard to keep track of your score. The leaderboard uses roughly 30% of the dataset to score an AUC (Area Under Curve) metric. [You can read more about the scoring metric here](https://www.kaggle.com/wiki/AreaUnderCurve).
 
