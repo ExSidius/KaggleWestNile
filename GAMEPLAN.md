@@ -3,4 +3,4 @@ ___
 
 Let's start out with a timeline.
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "I hope this is legible")
+![alt text](https://github.com/ExSidius/KaggleWestNile/blob/master/imgs/FullSizeRender.jpg "I hope this is legible")
