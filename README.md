@@ -14,7 +14,7 @@ Let's start out with a timeline.
 
 ### Model Building
 
-**_Everyone_ will work on this until _Tuesday_.**
+**_Everybody_ will work on this until _Tuesday_.**
 
 Some of the different models we will consider are listed below.
 
