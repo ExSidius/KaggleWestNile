@@ -1,5 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Kaggle Competition - Starter
 
+<<<<<<< HEAD
 ## Dataset
 
 ### Kaggle file descriptions
@@ -27,6 +28,21 @@ __weather.csv__ - weather data from 2007 to 2014. .
  - Column descriptions in __noaa_weather_qclcd_documentation.pdf__
 
 ~~The dataset, along with description, can be found here: [https://www.kaggle.com/c/predict-west-nile-virus/](https://www.kaggle.com/c/predict-west-nile-virus/).
+=======
+## Introduction
+
+Welcome to your first week of work at the Center for Disease Control. Time to get to work!
+
+Due to the recent epidemic of West Nile Virus in the Windy City, we've had the Department of Public Health set up a surveillance and control system. We're hoping it will let us learn something from the mosquito population as we collect data over time. Pesticides are a necessary evil in the fight for public health and safety, not to mention expensive! We need to derive an effective plan to deploy pesticides throughout the city, and that is **exactly** where you come in!
+
+As it's your first week on the job, let's get your development environment set up. Amongst your orientation group, we'll need you to get started by doing the following exercises. Also, see Linda in HR about getting your benefits set up. We have a GREAT health plan!
+
+Once again, welcome to the CDC. We have high expectations for you!
+
+## Dataset
+
+The dataset, along with description, can be found here: [https://www.kaggle.com/c/predict-west-nile-virus/](https://www.kaggle.com/c/predict-west-nile-virus/).
+>>>>>>> 3be2457d8696e0110f0015ca150a057523c24112
 
 **This is also where you will be submitting your code for evaluation**. We will be using the Kaggle Leaderboard to keep track of your score. The leaderboard uses roughly 30% of the dataset to score an AUC (Area Under Curve) metric. [You can read more about the scoring metric here](https://www.kaggle.com/wiki/AreaUnderCurve).
 
