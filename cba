@@ -1,0 +1,18 @@
+CBA approach:
+Take test data from 9/26/13 - 10/2/14
+Predict WnvPresent for each entry
+Find locations with highest predicted probability
+Find dates with highest predicted probability overall
+Intersection of these will be the spray plan
+Create dataframe with the spray plan (ea spray instance ~$1100)
+this is the cost
+
+benefit? how?
+Use model to predict updated WnvPresent and find the difference
+estimate # of people who catch it? how??
+2012 - 174, 5 deaths
+2013 - 60, 7 (most spraying occurred in 2013)
+multiply by ~14000 (from Sacramento study)
+
+
+
