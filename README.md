@@ -4,10 +4,10 @@ ___
 
 Members include:
 
-..*Russell Brown
+* Russell Brown
 
-..*Stephanie Jones
+* Stephanie Jones
 
-..*Mukul Ram
+* Mukul Ram
 
-..*Brice Wolfgang
+* Brice Wolfgang
