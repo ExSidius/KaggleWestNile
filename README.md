@@ -44,19 +44,41 @@ _These changes resulted in marked improvements to our model._
 
 Given that Number of Mosquitos had a high correlation with West Nile Virus, and our test data doesn't contain it, we attempted to find a way to compute an approximate version of it. This is when we discovered that leakage was an extremely useful feature.
 
-Every time an instance hits 50 mosquitos, it's split into another row that contains almost identical information (except potentially Number of Mosquitos). This held true for both training and test data. Therefore, simply by computing the number of duplicate rows, we were able to determine an approximate way to determine how many mosquitos there are, and therefore whether there is West Nile Virus.
+1. Every time an instance hits 50 mosquitos, it's split into another row that contains almost identical information (except potentially Number of Mosquitos). This held true for both training and test data. Therefore, simply by computing the number of duplicate rows, we were able to determine an approximate way to determine how many mosquitos there are, and therefore whether there is West Nile Virus.
 
-We also factorized the trap.
+2. We also factorized the trap.
 
-We converted the date to an ordinal form and got rid of 'Year' (since it conveys virtually the same information). 'Week' information, however, was useful - presumably because it reflects seasonal patterns in mosquito breeding.
+3. We converted the date to an ordinal form and got rid of 'Year' (since it conveys virtually the same information). 'Week' information, however, was useful - presumably because it reflects seasonal patterns in mosquito breeding.
 
-We calculated 'Days Since a Trap was Last Checked'. This was extremely useful given that if a trap hadn't been checked for a long time, it would naturally have many more mosquitos despite not actually indicating the presence of West Nile Virus.
+4. We calculated 'Days Since a Trap was Last Checked'. This was extremely useful given that if a trap hadn't been checked for a long time, it would naturally have many more mosquitos despite not actually indicating the presence of West Nile Virus.
 
+5. We also engineered a 'Spray Factor' that was based on the distance from a centroid and time since spraying. Unfortunately, this only affected the model mildly since we have virtually no spray data for our test set.
 
+6. We dummified weather codes as well, but these (for the bulk of them) proved to have very little feature importance. Only in cases of thunderstorm and similar such phenomenon was there a noticable effect.
 
+7. We created a length of day feature - this proved integral to the model.
+
+8. We aggregated weather data across the two stations to get a more accurate representation of the weather conditions.
+
+9. The most computationally tricky features we engineered were time lagged data that had been operated on.
+Our function could compute, for example, the maximum temperature over the last 14 days, or the average humidity over the last 3 days.
+
+10. We also weighed each Trap manually - we created a count showing how often each Trap shows up, and how often each Trap shows up by year.
 
 ## Modeling
 
+Our final model was an XGBoost model with a learning rate of 0.2.
+
+Our best model gave us a public AUC-ROC score of *0.76892* and a private score of _0.76117_.
+
+Our second-best model (which must have been a tad overfit) gave us a public AUC-ROC score of *0.77068* and a private score of _0.75741_.
+
+For the sake of curiousity, we also weighted our model (took all probabilities in the year 2012 [which saw a mosquito breakout] and multiply them by 3 [and rounding down to 0.99 if probabilities exceeded 1]). We didn't wish to make this our official model because it made use of external data, which was prohbhited by the competition and defeats common sense. This gave us a public AUC-ROC score of *0.80424* and a private score of _0.79563_.
+
 ## Cost-Benefit Analysis
 
+We also conducted a rigorous cost-benefit analysis to go with this project.
+
 ## Presentation
+
+[You can find the accompanying presentation here.](goo.gl/BEpydd)
