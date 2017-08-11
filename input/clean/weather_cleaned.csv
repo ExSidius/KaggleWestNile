@@ -1,4 +1,4 @@
-,Station,Date,Temp_Max,Temp_Min,Temp_Avg,Temp_Norm_Dev,Temp_Dew_Point,Temp_Wet_Bulb,Heat,Cool,Sunrise,Sunset,CodeSum,Max_Snow_Depth,SnowFall,PrecipTotal,StnPressure,SeaLevel,ResultSpeed,ResultDir,AvgSpeed
+,Station,Date,Tmax,Tmin,Tavg,Depart,DewPoint,WetBulb,Heat,Cool,Sunrise,Sunset,CodeSum,Depth,SnowFall,PrecipTotal,StnPressure,SeaLevel,ResultSpeed,ResultDir,AvgSpeed
 0,1.0,2007-05-01,83.0,50.0,67.0,14.0,51.0,56.0,0.0,2.0,448.0,1849.0, ,0.0,0.0,0.00,29.10,29.82,1.7,27.0,9.2
 1,2.0,2007-05-01,84.0,52.0,68.0,,51.0,57.0,0.0,3.0,,, ,,,0.00,29.18,29.82,2.7,25.0,9.6
 2,1.0,2007-05-02,59.0,42.0,51.0,-3,42.0,47.0,14.0,0.0,447.0,1850.0,BR,0.0,0.0,0.00,29.38,30.09,13.0,4.0,13.4
