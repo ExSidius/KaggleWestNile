@@ -19,7 +19,7 @@ We were expected to refine a problem statement, wrangle the given data, engineer
 
 ## Problem Statement
 
-> Can you predict the probability of an outbreak of West Nile virus in a given location on a given date?
+> Can you predict the probability of an outbreak of West Nile Virus in a given location on a given date?
 
 Our problem statement was provided to us by Kaggle, which meant we didn't have to do a lot of mulling over it.
 
@@ -69,11 +69,11 @@ Our function could compute, for example, the maximum temperature over the last 1
 
 Our final model was an XGBoost model with a learning rate of 0.2.
 
-Our best model gave us a public AUC-ROC score of *0.76892* and a private score of _0.76117_.
+Our best model gave us a public AUC-ROC score of **0.76892** and a private score of _0.76117_.
 
-Our second-best model (which must have been a tad overfit) gave us a public AUC-ROC score of *0.77068* and a private score of _0.75741_.
+Our second-best model (which must have been a tad overfit) gave us a public AUC-ROC score of **0.77068** and a private score of _0.75741_.
 
-For the sake of curiousity, we also weighted our model (took all probabilities in the year 2012 [which saw a mosquito breakout] and multiply them by 3 [and rounding down to 0.99 if probabilities exceeded 1]). We didn't wish to make this our official model because it made use of external data, which was prohbhited by the competition and defeats common sense. This gave us a public AUC-ROC score of *0.80424* and a private score of _0.79563_.
+For the sake of curiousity, we also weighted our model (took all probabilities in the year 2012 [which saw a mosquito breakout] and multiply them by 3 [and rounding down to 0.99 if probabilities exceeded 1]). We didn't wish to make this our official model because it made use of external data, which was prohbhited by the competition and defeats common sense. This gave us a public AUC-ROC score of **0.80424** and a private score of _0.79563_.
 
 ## Cost-Benefit Analysis
 
